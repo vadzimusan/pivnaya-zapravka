@@ -30,6 +30,24 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Impact';
+    src: url('fonts/impact2.eot');
+    src: local(''), url('fonts/impact2.woff') format('woff'), url('fonts/impact2.ttf') format('truetype'), url('fonts/impact2.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSans Narrow';
+    src: url('fonts/PTSansNarrow-Regular.eot');
+    src: local(''), url('fonts/PTSansNarrow-Regular.woff') format('woff'), url('fonts/PTSansNarrow-Regular.ttf') format('truetype'), url('fonts/PTSansNarrow-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 
 
 /*Сетка*/
@@ -86,7 +104,7 @@ body {
 }
 
 .site-navigation li a:hover {
-    border-bottom: 3px solid #FF6465;
+    border-bottom: 1px solid #FF6465;
 }
 
 .site-navigation li:nth-child(2)::before {
@@ -151,6 +169,10 @@ body {
     min-height: 80px;
 }
 
+.user-navigation-mobile {
+    display: none;
+}
+
 .user-navigation li {
     margin-left: 42px;
 }
@@ -193,9 +215,17 @@ body {
     background-position: 78% 97%, center;
 }
 
+.adress-and-phonenumber-block {
+    display: none;
+}
+
 .background-logo-main {
     margin-top: 80px;
     margin-bottom: 25px;
+}
+
+.main-logo-mobile {
+    display: none;
 }
 
 .main-title {
@@ -267,6 +297,7 @@ body {
 .flexwrapper {
     display: flex;
     justify-content: space-between;
+
 }
 
 .features-subtitle {
@@ -431,6 +462,10 @@ body {
 
 /*Блок новинок*/
 
+.mobile-new-product {
+    display: none;
+}
+
 .new-product-block {
     padding-top: 100px;
     padding-bottom: 57px;
@@ -498,7 +533,7 @@ body {
 
 .discount-block-slogan {
     text-align: center;
-    font-family: "PT Sans Narrow", sans-serif;
+    font-family: PT Sans Narrow, sans-serif;
     font-size: 64px;
     font-weight: 100;
     margin: 0;
@@ -680,4 +715,669 @@ p.phone-footer {
     background-repeat: no-repeat;
     width: 135px;
     height: 134px;
+}
+
+
+/* Мобильная версия  */
+
+@media (max-width: 413px) {
+
+    html,
+    body {
+        margin: 0;
+        min-height: 2096px;
+        font-family: Averta Demo, Arial, sans-serif;
+        color: #542B29;
+        text-transform: uppercase;
+    }
+
+    .wrapper {
+        width: 413px;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .main-header {
+        min-height: 40px;
+        margin: 0;
+        background-color: #FAF1B2;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        width: 413px;
+        margin: 0 auto;
+
+    }
+
+    .site-navigation {
+        margin: 0;
+        padding: 0;
+        width: 286px;
+        list-style: none;
+        min-height: 40px;
+    }
+
+    .site-navigation li {
+        display: inline-block;
+        position: relative;
+        margin-right: 23px;
+        margin-top: 8px;
+    }
+
+    .site-navigation li:last-child {
+        margin-right: 0;
+    }
+
+
+    .site-navigation li a {
+        color: #542B29;
+        font-size: 8px;
+        text-decoration: none;
+    }
+
+    .site-navigation li a:hover {
+        border-bottom: none;
+    }
+
+    .site-navigation li a:active {
+        border-bottom: 3px solid #FF6465;
+    }
+
+    .site-navigation li:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: -13px;
+        width: 1px;
+        height: 10px;
+        background-image: url("images/image-for-mobile/Line-nav-mobile.png");
+    }
+
+    .site-navigation li:last-child::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: -13px;
+        width: 1px;
+        height: 10px;
+        background-image: url("images/image-for-mobile/Line-nav-mobile.png");
+    }
+
+    .site-navigation li:nth-child(3)::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: -13px;
+        width: 1px;
+        height: 10px;
+        background-image: url("images/image-for-mobile/Line-nav-mobile.png");
+    }
+
+
+    .phone-block {
+        display: none;
+    }
+
+
+    .user-navigation {
+        display: none;
+    }
+
+    .container {
+        width: 286px;
+        margin: 0 auto;
+    }
+
+    /*Основной блок */
+
+    .main-block-slider {
+        margin-bottom: 100px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 554px;
+        background-image: url("images/image-for-mobile/icon-18years-main-mobile.png"), url("images/image-for-mobile/background-main-mobile.png");
+        background-repeat: no-repeat;
+        background-position: 83% 3%, top center;
+    }
+
+    .main-logo {
+        display: none;
+    }
+
+    .main-logo-mobile {
+        display: block;
+        margin: 0;
+    }
+
+    .background-logo-main {
+        margin-top: 73px;
+        margin-bottom: 5px;
+    }
+
+    .main-title {
+        font-family: Impact, sans-serif;
+        font-size: 40px;
+        color: #FAF1B2;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+
+    .main-subtitle {
+        font-family: Guerrilla, sans-serif;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+
+    .user-navigation-mobile {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 77px;
+        list-style: none;
+        text-align: center;
+        min-height: 80px;
+        margin-bottom: 70px;
+    }
+
+    .user-navigation-mobile li a {
+        display: block;
+        font-size: 8px;
+        background-color: rgba(90, 90, 90, .30);
+        border: 1px solid #FEF8F8;
+        border-radius: 2px;
+        margin-top: 20px;
+        text-align: center;
+        width: 77px;
+        height: 20px;
+        text-decoration: none;
+        color: #fff;
+        line-height: 2.2em;
+    }
+
+    .adress-and-phonenumber-block {
+        display: block;
+        font-size: 12px;
+        color: #fff;
+        text-transform: none;
+        text-align: center;
+        line-height: 16px;
+    }
+
+    .phonenumber-mobile {
+        position: relative;
+    }
+
+    .phonenumber-mobile::before {
+        content: "";
+        position: absolute;
+        left: -5%;
+        top: -25%;
+        width: 30px;
+        height: 33px;
+        background-image: url("images/image-for-mobile/phone-icon-footer-mobile.png");
+        background-repeat: no-repeat;
+    }
+
+    .switch-block {
+        display: none;
+    }
+
+    /*Блок преимуществ*/
+
+    .features {
+        position: relative;
+        min-height: 700px;
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-position: 88% bottom;
+    }
+
+    .features::after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 364px;
+        left: 7%;
+        top: 76%;
+        z-index: 2;
+        background-image: url("");
+        background-repeat: no-repeat;
+    }
+
+    .flexwrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .features-subtitle {
+        margin-bottom: 80;
+        font-size: 16px;
+        color: #9D2F30;
+        text-align: center;
+    }
+
+    .features-good-price-block {
+        position: relative;
+        z-index: 500;
+        width: 135px;
+        margin-bottom: 75px;
+    }
+
+    .features-fresh-block {
+        width: 135px;
+        margin-bottom: 75px;
+    }
+
+    .features-diversity-block {
+        width: 135px;
+        margin-bottom: 75px;
+    }
+
+    .features-promo-block {
+        width: 135px;
+        margin-bottom: 75px;
+    }
+
+    .features-good-price-title {
+        margin-top: 0;
+        margin-bottom: 32px;
+        font-family: Kankin, sans-serif;
+        font-size: 12px;
+        color: #222222;
+        text-align: center;
+    }
+
+    .romb {
+        width: 20px;
+        height: 20px;
+        background-image: url("images/image-for-mobile/romb.png");
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-bottom: 32px;
+    }
+
+    .features-good-price-block-subtitle {
+        font-family: Kankin, sans-serif;
+        font-size: 10px;
+        color: #542B29;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    .good-price-text-block {
+        margin-top: 50px;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0.72);
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .features-fresh-block-title {
+        margin-top: 0;
+        margin-bottom: 32px;
+        font-family: Kankin, sans-serif;
+        font-size: 12px;
+        color: #222222;
+        text-align: center;
+    }
+
+    .features-fresh-block-subtitle {
+        font-family: Kankin, sans-serif;
+        font-size: 10px;
+        color: #542B29;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    .fresh-text-block {
+        margin-top: 50px;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0.72);
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .features-diversity-block-title {
+        margin-top: 0;
+        margin-bottom: 32px;
+        font-family: Kankin, sans-serif;
+        font-size: 12px;
+        color: #222222;
+        text-align: center;
+    }
+
+    .features-diversity-block-subtitle {
+        font-family: Kankin, sans-serif;
+        font-size: 10px;
+        color: #542B29;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    .diversity-text-block {
+        margin-top: 50px;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0.72);
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .good-price-text-block p,
+    .fresh-text-block p,
+    .diversity-text-block p,
+    .promo-text-block p {
+        font-family: Kankin, sans-serif;
+        font-size: 8px;
+        text-transform: none;
+        text-align: center;
+        padding: 20px 15px;
+        line-height: 1.3em;
+    }
+
+    .good-price-text-block p {
+        padding-top: 70px;
+    }
+
+    .features-promo-block-title {
+        margin-top: 0;
+        margin-bottom: 32px;
+        font-family: Kankin, sans-serif;
+        font-size: 12px;
+        color: #222222;
+        text-align: center;
+    }
+
+    .features-promo-block-subtitle {
+        font-family: Kankin, sans-serif;
+        font-size: 10px;
+        color: #542B29;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    .promo-text-block {
+        margin-top: 50px;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0.72);
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .friday {
+        color: #FF6465;
+        font-size: 12px;
+    }
+
+    .ninety {
+        color: #FF6465;
+        font-size: 12px;
+    }
+
+    /*Блок новинок*/
+    .desctop-new-product {
+        display: none;
+    }
+
+    .mobile-new-product {
+        display: block;
+    }
+
+    .new-product-block {
+        padding-top: 100px;
+        padding-bottom: 57px;
+        background-color: #DADADA;
+    }
+
+    .title-block-new-and-sell {
+        position: relative;
+        z-index: 500;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 65px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .image-block {
+        position: relative;
+        outline: 2px solid #fff;
+        outline-offset: -2px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.72);
+    }
+
+    .image-block::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 94%;
+        background-image: url(images/image-for-mobile/icon-switch-right-mobile.png);
+        background-repeat: no-repeat;
+        width: 9px;
+        height: 11px;
+    }
+
+    .image-block::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 2.5%;
+        background-image: url(images/image-for-mobile/icon-switch-left-mobile.png);
+        background-repeat: no-repeat;
+        width: 9px;
+        height: 11px;
+    }
+
+    /*Блок скидочной карты*/
+
+    .discount-block {
+        background-image: url("images/image-for-mobile/background-discount-mobile.png");
+        background-repeat: no-repeat;
+        background-color: #f3f3f3;
+        padding-top: 90px;
+        padding-bottom: 95px;
+
+    }
+
+    .discount-block-subtitle {
+        font-size: 16px;
+        color: #9D2F30;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .discount-block-slogan {
+        text-align: center;
+        font-family: PT Sans Narrow, sans-serif;
+        font-size: 14px;
+        margin: 0;
+        margin-bottom: 117px;
+    }
+
+    .discount-item {
+        position: relative;
+        width: 135px;
+        height: 107px;
+        background-color: rgba(255, 255, 255, .7);
+        text-align: center;
+        outline: 2px solid #5a1a1a;
+    }
+
+    .discount-item p {
+        font-family: Kankin, sans-serif;
+        text-transform: none;
+        font-size: 8px;
+        text-align: center;
+        padding: 22px 10px;
+    }
+
+    .discount-card-icon::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: 85px;
+        background-image: url("images/image-for-mobile/icon-discountCard-mobile.png");
+        width: 40px;
+        height: 40px;
+    }
+
+    .registration-icon::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: 85px;
+        background-image: url("images/image-for-mobile/icon-registration-mobile.png");
+        width: 40px;
+        height: 40px;
+    }
+
+    .surprise-icon::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: 85px;
+        background-image: url("images/image-for-mobile/icon-buy-mobile.png");
+        width: 40px;
+        height: 40px;
+    }
+
+    .procent-icon::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: 85px;
+        background-image: url("images/image-for-mobile/icon-procent-mobile.png");
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-footer {
+        background-image: url("images/background-footer.png");
+        background-repeat: no-repeat;
+        padding-top: 30px;
+        min-height: 196px;
+    }
+
+    .subtitle-footer-block {
+        margin: 0;
+        margin-bottom: 25px;
+        color: #542B29;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .map-block {
+        background-image: url("images/image-for-mobile/block-map-mobile.png");
+        background-repeat: no-repeat;
+        width: 154px;
+        height: 155px;
+        outline: 2px solid #945A5A;
+        outline-offset: -2px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .map-block-link {
+        margin-top: 100px;
+        margin-left: 15px;
+    }
+
+    .map-block-link a {
+        color: #000;
+        font-size: 8px;
+        text-transform: none;
+    }
+
+    .contacts-block {
+        width: 116px;
+    }
+
+    .logo-footer-background {
+        background-image: url("images/image-for-mobile/logo-footer-mobile.png");
+        width: 41px;
+        height: 46px;
+        background-repeat: no-repeat;
+        margin-left: 35%;
+    }
+
+    .contacts-block span {
+        color: #FF6465;
+    }
+
+    .contacts-block .adress {
+        font-size: 12px;
+        text-transform: none;
+        text-align: center;
+        margin-top: 0;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+
+    p.phone-footer {
+        position: relative;
+    }
+
+    .phone-footer::before {
+        content: "";
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        width: 30px;
+        height: 33px;
+        background-image: url("images/image-for-mobile/phone-icon-footer-mobile-black.png");
+        background-repeat: no-repeat;
+    }
+
+    .contacts-block p {
+        font-size: 8px;
+        text-align: center;
+        text-transform: none;
+    }
+
+    .contacts-block .phone-footer {
+        font-size: 10px;
+    }
+
+    .dayswork {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .timework {
+        margin: 0;
+        line-height: 20px;
+    }
+
+    /*Блок предупреждения*/
+
+    .warning-block {
+        background-color: #565656;
+        min-height: 41px;
+        padding-top: 10px;
+    }
+
+    .warning-block p {
+        width: 413px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #fff;
+        margin: 0;
+        letter-spacing: -1px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .image-warning-block {
+        margin-left: 10px;
+        background-image: url("images/image-for-mobile/icon-18years-warning-block-mobile.png");
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+
 }
